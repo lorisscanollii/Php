@@ -26,5 +26,18 @@
                 <th>Email</th>
             </table>
         </thead>
+        <tbody>
+            <?php
+                foreach($users as $user){
+            ?>
+            <tr>
+                <td><?=$user['id']?></td>
+                <td><?=$user['name']?></td>
+                <td><?=$user['surname']?></td>
+                <td><?=$user['email']?></td>
+            </tr>
+            <?php } ?>
+        </tbody>
+        <a href="index.php"></a>
     </body>
 </html>
