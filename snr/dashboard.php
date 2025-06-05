@@ -45,6 +45,13 @@ $totalProducts = $countStmt->fetchColumn();
                     
                 <a href="edit_product.php?id=<?= $product['id'] ?>">Edit</a>
                 <a href="delete_product.php?id=<?= $product['id'] ?>" onclick="return confirm('Are you sure?')">Delete</a>
+                <form action="sell_product.php" method="post" style="display:inline;">
+                <input type="hidden" name="product_id" value="<?= $product['id'] ?>">
+                <input type="number" name="quantity" min="1" max="<?= $product['quantity'] ?>" style="width: 60px;" required>
+                <button type="submit">Sell</button>
+                <a href="sold_products.php" class="button" style="margin-bottom: 20px;">📊 View Sold Products</a>
+                </form>
+
                 
 
 
