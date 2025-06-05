@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$db   = 'snr_db';
+$db   = 'snrdb1';
 $user = 'root';
 $pass = '';
 $charset = 'utf8mb4';
